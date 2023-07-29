@@ -37,14 +37,24 @@ all other files should have matching indexes
 	and append the records to the matched_reads R1 and R4 files
 
 
-	High level functions. For each function, be sure to include:
-	Description/doc string
-	Function headers (name and parameters)
-	Test examples for individual functions
-	Return statement
+	
 
+    
 
 def reverse_complement
 	"This function takes a DNA string and reurns the reverse complement"
 	return reverse complement
-	
+example input: 'ATCG'
+example output: 'CGAT'	
+
+def demultiplex_reads
+    "this function uses approximately maybe 900 if statements and some loops to take multiplexed sequences and their indexes and demultiplex them and store them in a dictionary."
+    return matched read pairs, index hopped read pairs, unknown read pairs, and their counts
+example input: read1, index1, index2, read2
+example output: "matched read pairs:" [list of matched reads]
+                "index hopped pairs:" [list of index hopped reads]
+                "unknown pairs:" [list of unknown reads]
+                "matched read pairs:" (int) number of matched reads
+                "index hopped pairs:" (int) number of hopped reads
+                "unknown pairs:" (int) number of unknown reads
+
