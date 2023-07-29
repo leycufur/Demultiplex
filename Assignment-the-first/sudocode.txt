@@ -1,0 +1,50 @@
+# Files:
+
+R1: seq1
+R2: index1
+R3: index2
+R4: seq2
+
+Seq_files: seq1, seq2
+Index_files: index1, index2
+
+Read index file with known indexes and store them in a dictionary
+keys: known index (str) but need to be R1-index and R4-index
+values: counts of records with that index
+known_index{}
+
+Open all 4 files
+assign each 4 lines (4 lines per record) a variable:
+	header = read.line() 1
+	seq = read.line() 2
+	plus = read.line() 3
+	qual_score = read.line() 4
+
+reverse complement all "seq" lines in file R3
+
+create a function that reads the quality scores of each record in each file and moves records with low qual scores to the unknown R1 and R4 files
+
+if "seq" in R2 and R3 contain "N"
+	append "seq" of R2 and R3 to "header" of R1 and R4 records
+	and append the records to the index_hopped R1 and R4 files
+
+if "seq" in R2 and R3 do not match the known_index list
+	append "seq" of R2 and R3 to "header" of R1 and R4 records
+	and append the records to the unknown R1 and R4 files
+
+all other files should have matching indexes 
+	append "seq" of R2 and R3 to "header" of R1 and R4 records
+	and append the records to the matched_reads R1 and R4 files
+
+
+	High level functions. For each function, be sure to include:
+	Description/doc string
+	Function headers (name and parameters)
+	Test examples for individual functions
+	Return statement
+
+
+def reverse_complement
+	"This function takes a DNA string and reurns the reverse complement"
+	return reverse complement
+	
