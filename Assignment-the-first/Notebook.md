@@ -2,6 +2,7 @@
                               ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
                                     ୨⎯ Bash commands for data exploration ⎯୧
                               ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+
 First I decided to "head" each file to see what they all looked like. Looks like they are all fastq files and all have the same headers except for the tabbed over section e.g. "1:N:0:1". The files are named differently as follows: 1:N:0:1, 2:N:0:1, 3:N:0:1, 4:N:0:1, respectively. 
 
 
@@ -10,6 +11,7 @@ First I decided to "head" each file to see what they all looked like. Looks like
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
       ⇘ Command ⇙
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
+
 $ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R1_001.fastq.gz | head
 
 
@@ -18,6 +20,7 @@ $ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R1_001.fastq.gz | head
  ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
       ⇘ Output ⇙
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+
 @K00337:83:HJKJNBBXX:8:1101:1265:1191 1:N:0:1
 GNCTGGCATTCCCAGAGACATCAGTACCCAGTTGGTTCAGACAGTTCCTCTATTGGTTGACAAGGTCTTCATTTCTAGTGATATCAACACGGTGTCTACAA
 +
@@ -35,6 +38,7 @@ GNGGTCTTCTACCTTTCTCTTCTTTTTTGGAGGAGTAGAATGTTGAGAGTCAGCAGTAGCCTCATCATCACTAGATGGCA
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
       ⇘ Command ⇙
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
+
 $ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | head
 
 
@@ -42,6 +46,7 @@ $ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | head
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
       ⇘ Output ⇙
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+
 @K00337:83:HJKJNBBXX:8:1101:1265:1191 2:N:0:1
 NCTTCGAC
 +
@@ -59,6 +64,7 @@ NTCCTAAG
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
       ⇘ Command ⇙
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
+
 $ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | head
 
 
@@ -66,6 +72,7 @@ $ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | head
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
       ⇘ Output ⇙
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
+
 @K00337:83:HJKJNBBXX:8:1101:1265:1191 3:N:0:1
 NTCGAAGA
 +
@@ -83,6 +90,7 @@ NTTAGGAC
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
       ⇘ Command ⇙
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
+
 $ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R4_001.fastq.gz | head```
 
 
@@ -90,6 +98,7 @@ $ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R4_001.fastq.gz | head
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
       ⇘ Ouput ⇙
 ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
+
 @K00337:83:HJKJNBBXX:8:1101:1265:1191 4:N:0:1
 NTTTTGATTTACCTTTCAGCCAATGAGAAGGCCGTTCATGCAGACTTTTTTAATGATTTTGAAGACCTTTTTGATGATGATGATGTCCAGTGAGGCCTCCC
 +
@@ -107,6 +116,7 @@ NAAATGCCATCTAGTGATGATGAGGCTACTGCTGACTCTCAACATTCTACTCCTCCAAAAAAGAAGAGAAAGATTCCAAC
 								▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
 								୨⎯ Determine the length of the reads in each file ⎯୧
 								▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+
 	[1]   Running                 zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R4_001.fastq.gz | head -2 | grep -v "^@" | wc -L &
 	[2]   Running                 zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | head -2 | grep -v "^@" | wc -L & #[1] 265026
 	[3]   Running                 zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz |  head -2 | grep -v "^@" | wc -L & #[2] 2650265
@@ -122,6 +132,7 @@ NAAATGCCATCTAGTGATGATGAGGCTACTGCTGACTCTCAACATTCTACTCCTCCAAAAAAGAAGAGAAAGATTCCAAC
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
                                                     ୨⎯ Submitting job to scheduler⎯୧
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+
 (bgmp_py311) [leylacuf@n0187 Bi622]$ squeue -u leylacuf
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
              23910   compute run_demu leylacuf  R       1:17      1 n0187
@@ -139,6 +150,7 @@ NAAATGCCATCTAGTGATGATGAGGCTACTGCTGACTCTCAACATTCTACTCCTCCAAAAAAGAAGAGAAAGATTCCAAC
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
                                                             ୨⎯ R1 run info ⎯୧
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+
 	Command being timed: "python /projects/bgmp/leylacuf/bioinfo/Bi622/Demultiplexing_1.py -f /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R1_001.fastq.gz -o R1_results -l 101"
 	User time (seconds): 5515.59
 	System time (seconds): 8.66
@@ -169,6 +181,7 @@ NAAATGCCATCTAGTGATGATGAGGCTACTGCTGACTCTCAACATTCTACTCCTCCAAAAAAGAAGAGAAAGATTCCAAC
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
                                                             ୨⎯ R2 run info ⎯୧
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+
 	Command being timed: "python /projects/bgmp/leylacuf/bioinfo/Bi622/Demultiplexing_1.py -f /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz -o R2_results -l 8"
 	User time (seconds): 745.21
 	System time (seconds): 1.92
@@ -200,6 +213,7 @@ NAAATGCCATCTAGTGATGATGAGGCTACTGCTGACTCTCAACATTCTACTCCTCCAAAAAAGAAGAGAAAGATTCCAAC
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
                                                             ୨⎯ R3 run info ⎯୧
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+
 	Command being timed: "python /projects/bgmp/leylacuf/bioinfo/Bi622/Demultiplexing_1.py -f /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz -o R3_results -l 8"
 	User time (seconds): 749.36
 	System time (seconds): 1.74
@@ -231,6 +245,7 @@ NAAATGCCATCTAGTGATGATGAGGCTACTGCTGACTCTCAACATTCTACTCCTCCAAAAAAGAAGAGAAAGATTCCAAC
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
                                                             ୨⎯ R4 run info ⎯୧
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+										
 	Command being timed: "python /projects/bgmp/leylacuf/bioinfo/Bi622/Demultiplexing_1.py -f /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R4_001.fastq.gz -o R4_results -l 101"
 	User time (seconds): 5543.29
 	System time (seconds): 10.21
