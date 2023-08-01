@@ -9,7 +9,7 @@
 
 
 	╔══ ≪ °❈° ≫ ══╗
-	⇘ Command ⇙
+	  ⇘ Command ⇙
 	╚═════════════╝
 
 	$ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R1_001.fastq.gz | head
