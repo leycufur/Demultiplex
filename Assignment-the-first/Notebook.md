@@ -113,9 +113,9 @@ NAAATGCCATCTAGTGATGATGAGGCTACTGCTGACTCTCAACATTCTACTCCTCCAAAAAAGAAGAGAAAGATTCCAAC
 
 
 
-								▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
-								୨⎯ Determine the length of the reads in each file ⎯୧
-								▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+						▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+						୨⎯ Determine the length of the reads in each file ⎯୧
+						▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
 
 	[1]   Running                 zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R4_001.fastq.gz | head -2 | grep -v "^@" | wc -L &
 	[2]   Running                 zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | head -2 | grep -v "^@" | wc -L & #[1] 265026
@@ -133,17 +133,17 @@ NAAATGCCATCTAGTGATGATGAGGCTACTGCTGACTCTCAACATTCTACTCCTCCAAAAAAGAAGAGAAAGATTCCAAC
                                                     ୨⎯ Submitting job to scheduler⎯୧
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
 
-(bgmp_py311) [leylacuf@n0187 Bi622]$ squeue -u leylacuf
-             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-             23910   compute run_demu leylacuf  R       1:17      1 n0187
-             23908   compute run_demu leylacuf  R       2:17      1 n0187
-             23907   compute run_demu leylacuf  R       4:17      1 n0187
-             23906   compute run_demu leylacuf  R       5:32      1 n0187
-             23886   compute     bash leylacuf  R      20:17      1 n0187
-	✧ 07 is R2
-	✧ 06 is R3
-	✧ 08 is R1
-	✧ 10 is R4
+	(bgmp_py311) [leylacuf@n0187 Bi622]$ squeue -u leylacuf
+				JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+				23910   compute run_demu leylacuf  R       1:17      1 n0187
+				23908   compute run_demu leylacuf  R       2:17      1 n0187
+				23907   compute run_demu leylacuf  R       4:17      1 n0187
+				23906   compute run_demu leylacuf  R       5:32      1 n0187
+				23886   compute     bash leylacuf  R      20:17      1 n0187
+		✧ 07 is R2
+		✧ 06 is R3
+		✧ 08 is R1
+		✧ 10 is R4
 
 
 
@@ -245,7 +245,7 @@ NAAATGCCATCTAGTGATGATGAGGCTACTGCTGACTCTCAACATTCTACTCCTCCAAAAAAGAAGAGAAAGATTCCAAC
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
                                                             ୨⎯ R4 run info ⎯୧
                                         ▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
-										
+
 	Command being timed: "python /projects/bgmp/leylacuf/bioinfo/Bi622/Demultiplexing_1.py -f /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R4_001.fastq.gz -o R4_results -l 101"
 	User time (seconds): 5543.29
 	System time (seconds): 10.21
