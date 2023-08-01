@@ -73,13 +73,22 @@ def populate_list(file:str) -> tuple[list, int]:
     return my_list, num_lines # return list of quality scores (my_list) and line count (num_lines)
 
 my_list, num_lines = populate_list(file)
+# print(my_list)
+# print(num_lines)
 
 
-def mean_quality_scores(my_list, num_lines):
-    "This function"
-    for mean_score, value in enumerate(my_list):
-        my_list[mean_score] = value/num_lines
-    return my_list
+for i, value in enumerate(my_list):
+    mean_list = value/(num_lines/4)
+    my_list[i]=mean_list
+
+# def mean_quality_scores(my_list, num_lines):
+#     "This function"
+#     for mean_score, value in enumerate(my_list):
+#         my_list[mean_score] = value/num_lines
+#     return my_list
+print(my_list)
+
+
 
 plt.bar(range(len(my_list)),my_list)
 plt.ylabel("Mean quality score per position")
