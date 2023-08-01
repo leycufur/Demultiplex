@@ -14,9 +14,9 @@
 
 	$ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R1_001.fastq.gz | head
 
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
-	⇘ Output ⇙
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+	╔══ ≪ °❈° ≫ ══╗
+	  ⇘ Output ⇙
+	╚═════════════╝
 
 	@K00337:83:HJKJNBBXX:8:1101:1265:1191 1:N:0:1
 	GNCTGGCATTCCCAGAGACATCAGTACCCAGTTGGTTCAGACAGTTCCTCTATTGGTTGACAAGGTCTTCATTTCTAGTGATATCAACACGGTGTCTACAA
@@ -32,17 +32,16 @@
 
 
 
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
-	⇘ Command ⇙
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
+	╔══ ≪ °❈° ≫ ══╗
+	  ⇘ Command ⇙
+	╚═════════════╝
 
 	$ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | head
 
 
-
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
-	⇘ Output ⇙
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
+	╔══ ≪ °❈° ≫ ══╗
+	  ⇘ Output ⇙
+	╚═════════════╝
 
 	@K00337:83:HJKJNBBXX:8:1101:1265:1191 2:N:0:1
 	NCTTCGAC
@@ -56,19 +55,15 @@
 	NTCCTAAG
 
 
-
-
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
-	⇘ Command ⇙
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
-
+	╔══ ≪ °❈° ≫ ══╗
+	  ⇘ Command ⇙
+	╚═════════════╝
 	$ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | head
 
+	╔══ ≪ °❈° ≫ ══╗
+	  ⇘ Output ⇙
+	╚═════════════╝
 
-
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
-	⇘ Output ⇙
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
 
 	@K00337:83:HJKJNBBXX:8:1101:1265:1191 3:N:0:1
 	NTCGAAGA
@@ -82,19 +77,17 @@
 	NTTAGGAC
 
 
-
-
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
-	⇘ Command ⇙
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
-
+	╔══ ≪ °❈° ≫ ══╗
+	  ⇘ Command ⇙
+	╚═════════════╝
 	$ zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R4_001.fastq.gz | head```
 
 
 
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄
-	⇘ Ouput ⇙
-	▄▀▄▀▄▀▄▀▄▀▄▄▀▄▀▄▀▄▀▄▀▄ 
+	╔══ ≪ °❈° ≫ ══╗
+	  ⇘ Output ⇙
+	╚═════════════╝
+
 
 	@K00337:83:HJKJNBBXX:8:1101:1265:1191 4:N:0:1
 	NTTTTGATTTACCTTTCAGCCAATGAGAAGGCCGTTCATGCAGACTTTTTTAATGATTTTGAAGACCTTTTTGATGATGATGATGTCCAGTGAGGCCTCCC
