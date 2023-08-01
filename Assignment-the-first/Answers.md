@@ -12,16 +12,21 @@
 
 2. Per-base NT distribution
     1. Use markdown to insert your 4 histograms here.
+
     2. [R1 chart](https://github.com/leycufur/Demultiplex/blob/master/Assignment-the-first/R1_results.png)
     3. [R2 chart](https://github.com/leycufur/Demultiplex/blob/master/Assignment-the-first/R2_results.png)
     4. [R3 chart](https://github.com/leycufur/Demultiplex/blob/master/Assignment-the-first/R3_results.png)
     5. [R4 chart](https://github.com/leycufur/Demultiplex/blob/master/Assignment-the-first/R4_results.png)
-   
+
+```
+***** R2 and R3 charts are updated to the correct mean values.
+***** R1 and R4 will be /projects/bgmp/leylacuf/bioinfo/Bi622/R1_results.png and /projects/bgmp/leylacuf/bioinfo/Bi622/R4_results.png respectively 
+```
 
 3. What is a good quality score cutoff for index reads and biological read pairs to utilize for sample identification and downstream analysis, respectively? Justify your answer.
     ```A good quality score cutoff for the index and biological reads is 30. I chose to do 30 because, looking at the charts, most of the data falls at or around 30. I think that anything below 30 would result in less quality data and anything above 30 would eliminate a majority of the good data.
 
-    
+
 4. How many indexes have undetermined (N) base calls? (Utilize your command line tool knowledge. Submit the command(s) you used. CHALLENGE: use a one-line command)
     ```zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | grep -v "^@" | grep -v "^+$" | grep "N" | wc -l```
 
