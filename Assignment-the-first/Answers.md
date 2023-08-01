@@ -22,6 +22,7 @@
 1. Define the problem
 
 ```Reads are multiplexed and need to be demultiplexed e.g. decoded and need to report amount of index hopping```
+
 2. Describe output
 
 ```Output should be 48 fastq files named with acceptable index pairs that contain all the reads for forward (24 files) and reverse reads (24 files). Another 2 files will have all the index hopped reads for forward and reverse reads, and a final 2 files that have reads with unknown indexes that either do not match the known indexes or do not pass the quality score threshold.```
