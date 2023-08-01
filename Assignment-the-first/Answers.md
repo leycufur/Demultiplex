@@ -12,20 +12,21 @@
 
 2. Per-base NT distribution
     1. Use markdown to insert your 4 histograms here.
-    2. **YOUR ANSWER HERE**
-    3. **YOUR ANSWER HERE**
+    2. [R1 chart](https://github.com/leycufur/Demultiplex/blob/master/Assignment-the-first/R1_results.png)
+    3. [R2 chart](https://github.com/leycufur/Demultiplex/blob/master/Assignment-the-first/R2_results.png)
+    4. [R3 chart](https://github.com/leycufur/Demultiplex/blob/master/Assignment-the-first/R3_results.png)
+    5. [R4 chart](https://github.com/leycufur/Demultiplex/blob/master/Assignment-the-first/R4_results.png)
+   
     
 ## Part 2
 1. Define the problem
 
-```
-Reads are multiplexed and need to be demultiplexed e.g. decoded and need to report amount of index hopping
-```
+```Reads are multiplexed and need to be demultiplexed e.g. decoded and need to report amount of index hopping```
 2. Describe output
 
-```
-Output should be 48 fastq files named with acceptable index pairs that contain all the reads for forward (24 files) and reverse reads (24 files). Another 2 files will have all the index hopped reads for forward and reverse reads, and a final 2 files that have reads with unknown indexes that either do not match the known indexes or do not pass the quality score threshold.
-```
+```Output should be 48 fastq files named with acceptable index pairs that contain all the reads for forward (24 files) and reverse reads (24 files). Another 2 files will have all the index hopped reads for forward and reverse reads, and a final 2 files that have reads with unknown indexes that either do not match the known indexes or do not pass the quality score threshold.```
+
+
 3. Upload your [4 input FASTQ files](../TEST-input_FASTQ) and your [>=6 expected output FASTQ files](../TEST-output_FASTQ).
 4. Pseudocode
 5. High level functions. For each function, be sure to include:
