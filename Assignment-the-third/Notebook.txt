@@ -1,0 +1,44 @@
+
+# Bash commands used for data exploration:
+
+zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R1_001.fastq.gz | head
+# zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | head
+# zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | head
+# zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R4_001.fastq.gz | head
+
+
+Ran dumultiplexing script, got an error: 
+
+Traceback (most recent call last):
+  File "/projects/bgmp/leylacuf/bioinfo/Bi622/Demultiplexing_3.py", line 137, in <module>
+    extracted_index_dict[Ind1_seq][2].write(f"{R1_header} {Ind1_seq}-{Ind2_seq}\n{R1_seq}\n{R1_plus}\n{R1_qualscore}\n")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'NCTTCGAC'
+
+realized that I was asking it to write the record from the dictionary and had to add a few more variables:
+low_qual_R1 = open("low_qual_R1.fq", 'a+')
+low_qual_R2 = open("low_qual_R2.fq", 'a+')
+
+Originally, I had "if 'N' in Ind1 or if 'N' in Ind2".... then write to the low quality file. I submitted the job and got an error something along the lines of:
+
+"GTGG...." (some unknown index that was not in the known index dictionary) can't be written to a file
+
+I changed my original parameters to say "if Ind1 not in extracted_index_dict or if ...." then write to the low quality file
+
+I also got red squigglies on my script saying "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+This was due to the fact that the files are zipped so I had to do some reasearch on how to fix this and added in a few lines:
+
+        Ind1_seq = Ind1_seq.decode() if isinstance(Ind1_seq, bytes) else Ind1_seq
+        Ind2_seq = Ind2_seq.decode() if isinstance(Ind2_seq, bytes) else Ind2_seq
+        Ind1_qualscore = Ind1_qualscore.decode() if isinstance(Ind1_qualscore, bytes) else Ind1_qualscore
+        Ind2_qualscore = Ind2_qualscore.decode() if isinstance(Ind2_qualscore, bytes) else Ind2_qualscore
+
+https://realpython.com/python-encodings-guide/
+
+This can set Ind seqs and qualscores as strings using .decode() (default is utf-8). 'isinstance' is used to see if the instance is true. 
+So these lines basically say "decode the utf-8 if the variable is in bytes otherwise, it is left as it was
+
+
+Ran my script, accidentally printed my entire dictionary in a loop and got like 6000+ lines in my outfile
+
+Ran script again, everything seems to look good. Compared percentages with others and mine are a bit different but I think that is to do with the fact that I used a qscore cutoff while some people didn't. Looks like very low index hopping, and a fair amount of low-quality. Next steps that would be interesting is to see how many records were actually "low quality" by qscore vs how many had N's. 
